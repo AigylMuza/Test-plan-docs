@@ -1,0 +1,168 @@
+{
+	"id": "5e83b342-3480-42d3-94a0-72b053ebdba2",
+	"name": "Авторизация https://kazanexpress.ru",
+	"timestamp": "2023-03-21T18:49:11.413Z",
+	"collection_id": "25314137-093b5fb3-01df-410d-9a57-26ae1eee979e",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-21T18:49:09.959Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9bcccee3-e49a-4397-aee8-b7e1c2d65235",
+			"name": "Получение главного адреса",
+			"url": "https://kazanexpress.ru/",
+			"time": 66,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				66
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "dab08108-989c-4e78-845f-e0a4785eb2bf",
+			"name": "Получение продукта",
+			"url": "https://api.kazanexpress.ru/api/v2/product/2097059",
+			"time": 68,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				68
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "72eed587-a51c-496a-8e70-50f74308f833",
+			"name": "Получение продукта",
+			"url": "https://api.kazanexpress.ru/api/v2/product/1884035",
+			"time": 37,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "c0ae6bc6-c4b5-4d9a-bdfc-8c18ef79526a",
+			"name": "Товары недели",
+			"url": "https://api.kazanexpress.ru/api/category/-495",
+			"time": 69,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Товар недели": true
+			},
+			"testPassFailCounts": {
+				"Товар недели": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				69
+			],
+			"allTests": [
+				{
+					"Товар недели": true
+				}
+			]
+		},
+		{
+			"id": "e8e9a7ee-d1fa-4782-9828-b26690e927c3",
+			"name": "Ближайшее время доставки",
+			"url": "https://api.kazanexpress.ru/api/main/delivery?cityId=1&eco=false&courier=false",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 273,
+	"collection": {
+		"requests": [
+			{
+				"id": "9bcccee3-e49a-4397-aee8-b7e1c2d65235",
+				"method": "GET"
+			},
+			{
+				"id": "dab08108-989c-4e78-845f-e0a4785eb2bf",
+				"method": "GET"
+			},
+			{
+				"id": "72eed587-a51c-496a-8e70-50f74308f833",
+				"method": "GET"
+			},
+			{
+				"id": "c0ae6bc6-c4b5-4d9a-bdfc-8c18ef79526a",
+				"method": "GET"
+			},
+			{
+				"id": "e8e9a7ee-d1fa-4782-9828-b26690e927c3",
+				"method": "GET"
+			}
+		]
+	}
+}
